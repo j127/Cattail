@@ -16,7 +16,7 @@ then
             echo "Creating git repo"
             git init
             echo "Adding .gitignore"
-            echo ".*~\n*.swp\n*.swo\n*.pyc" >> .gitignore
+            echo "*~\n*.swp\n*.swo\n*.pyc" >> .gitignore
             echo "Adding .gitignore to repo"
             git add .gitignore
             echo "Committing to repo"
