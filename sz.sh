@@ -5,7 +5,7 @@
 # It doesn't check for existing files and could delete something important.
 
 helpme () {
-echo "sz: a toolbox for automating repetitive stuff in the terminal.";
+echo "Shelzilla: a toolbox for automating repetitive stuff in the terminal.";
 echo "sz init - starts a git repo in the current directory with a .gitignore. Does the initial commit."
 }
 
@@ -20,7 +20,7 @@ then
             echo "Adding .gitignore to repo"
             git add .gitignore
             echo "Committing to repo"
-            git commit -m "Initial commit by sz"
+            git commit -m "Initial commit by Shellzilla"
             echo "Done"
             ;;
         commit)
