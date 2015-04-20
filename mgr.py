@@ -17,14 +17,13 @@ script_location = os.path.abspath('{f}/../'.format(f=__file__))
 data_dir = script_location + '/data/'
 
 # Data
-gitignore_default = '{}gitignore_default.txt'.format(data_dir)
+gitignore_default = '{data_dir}gitignore_default.txt'.format(data_dir=data_dir)
 gitignore_target = '.gitignore'
 
 def make_git_repo():
     """Makes a Git repo with the default .gitignore."""
     call(['git', 'init'])
 
-    
     if os.path.isfile(gitignore_target):
         print('.gitignore file already exists here. The script did not overwrite it.')
     else:
@@ -32,7 +31,7 @@ def make_git_repo():
             shutil.copyfile(gitignore_default, '{cur_dir}/{fname}'.format(cur_dir=current_directory, fname=gitignore_target))
             print('Copied .gitignore to current directory.')
         except:
-            print('Something went wrong while copying the .gitignore file.', sys.exc_info()[0])
+            print('Something went wrong while copying the .gitignore file:', sys.exc_info()[0])
             print('Tried to copy from {src} to {dst}'.format(src=gitignore_default, dst=current_directory))
             raise
     return 'Done'
