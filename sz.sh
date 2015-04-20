@@ -16,8 +16,10 @@ then
             echo "Creating git repo"
             git init
             echo "Adding .gitignore"
-            echo "*~\n*.swp\n*.swo\n*.pyc" >> .gitignore
-            echo "Adding .gitignore to repo"
+            echo "*~\n*.sw[po]\n*.py[co]\n__pycache__\n" >> .gitignore
+            echo "Adding .gitignore to repo. It contains:"
+            cat .gitignore
+            echo "==================="
             git add .gitignore
             echo "Committing to repo"
             git commit -m "Initial commit by Shellzilla"
