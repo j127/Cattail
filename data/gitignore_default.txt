@@ -1,0 +1,11 @@
+# Editors
+*.~
+*.sw[po]
+
+# Python
+*.py[co]
+__pycache__/
+
+# Misc.
+tmp/
+*.bak
