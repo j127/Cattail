@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# JUST FOR REFERENCE WHILE CONVERTING TO PYTHON.
+
 # Please note, this is a work in progress just in the early stages
 # Don't use this script unless you understand exactly what it does!
 # It doesn't check for existing files and could delete something important.
