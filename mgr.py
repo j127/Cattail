@@ -19,6 +19,8 @@ data_dir = script_location + '/data/'
 # Data
 gitignore_default = '{data_dir}gitignore_default.txt'.format(data_dir=data_dir)
 gitignore_target = '.gitignore'
+initial_commit_message = 'Initial commit by Cattail.'
+# TODO: pass the initial_commit_message into the `git init` command
 
 def make_git_repo():
     """Makes a Git repo with the default .gitignore."""
