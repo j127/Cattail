@@ -5,6 +5,10 @@
 # Python
 *.py[co]
 __pycache__/
+venv/
+
+# Node
+node_modules/
 
 # Data
 *.sqlite3
