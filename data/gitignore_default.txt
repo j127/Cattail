@@ -1,6 +1,7 @@
 # Editors
 *~
 *.sw[po]
+.idea/
 
 # Python
 *.py[co]
